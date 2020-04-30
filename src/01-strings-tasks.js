@@ -1,5 +1,4 @@
 
-
 /* *******************************************************************************************
  *                                                                                           *
  * Plese read the following tutorial before implementing tasks:                              *
@@ -54,7 +53,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-  return 'Hello, ' + firstName + ' ' + lastName;
+  return `Hello, ${firstName} ${lastName}`;
 }
 
 /**
@@ -98,7 +97,7 @@ function getFirstChar(value) {
  *   '\tHello, World! ' => 'Hello, World!'
  */
 function removeLeadingAndTrailingWhitespaces(value) {
-   return value.trim();
+  return value.trim();
 }
 
 /**
@@ -205,9 +204,9 @@ function extractEmails(str) {
  *
  */
 function getRectangleString(width, height) {
-  return '┌' + '─'.repeat(width - 2) + '┐\n' +
-        ('│' + ' '.repeat(width - 2) + '│\n').repeat(height - 2) +
-         '└' + '─'.repeat(width - 2) + '┘\n';
+  return `┌${'─'.repeat(width - 2)}┐\n${
+    (`│${' '.repeat(width - 2)}│\n`).repeat(height - 2)
+  }└${'─'.repeat(width - 2)}┘\n`;
 }
 
 
